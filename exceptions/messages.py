@@ -1,0 +1,13 @@
+class ErrorMessages:
+    INVALID_CREDENTIALS = "The email or password provided is incorrect."
+    USER_EXISTS = "An account with this email address already exists."
+    UNAUTHORIZED = "You are not authenticated. Please log in."
+    FORBIDDEN = "You do not have the required permissions to perform this action."
+    NOT_FOUND = "The requested resource could not be found."
+    EXPIRED_TOKEN = "Your session has expired. Please log in again."
+    INVALID_TOKEN = "The session token is invalid or corrupted."
+    OCR_FAILED = "OCR text extraction failed. Please ensure the file is a clear image or readable PDF."
+    LLM_FAILED = "AI analysis failed. Please try again later."
+    DATABASE_ERROR = "A database error occurred while processing your request."
+    UPLOAD_FAILED = "File upload failed. Only PDF and image files are allowed."
+    EMAIL_FAILED = "Failed to dispatch email. Please check SMTP settings."

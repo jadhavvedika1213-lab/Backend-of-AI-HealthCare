@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Reminder</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f6f9fc; margin: 0; padding: 20px; color: #333333; }
+        .card { max-width: 500px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .header { font-size: 24px; font-weight: bold; color: #065f46; margin-bottom: 20px; text-align: center; }
+        .details { background: #f0fdf4; border-left: 4px solid #10b981; padding: 15px; margin: 20px 0; border-radius: 4px; }
+        .footer { font-size: 12px; color: #6b7280; text-align: center; margin-top: 30px; border-top: 1px solid #e5e7eb; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">Medication / Checkup Reminder</div>
+        <p>Hello {{ name }},</p>
+        <p>This is a scheduled reminder to help you stay on track with your health schedule.</p>
+        <div class="details">
+            <strong>Task:</strong> {{ reminder_title }} <br>
+            <strong>Scheduled Time:</strong> {{ reminder_time }}
+        </div>
+        <p>Please make sure you mark this task as completed in your health portal.</p>
+        <div class="footer">
+            AI HealthCare Backend Service Team
+        </div>
+    </div>
+</body>
+</html>
