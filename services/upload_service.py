@@ -5,7 +5,7 @@ from core.config import settings
 from utils.helpers import ensure_dir_exists, generate_uuid, get_file_extension, is_allowed_file
 from exceptions.custom import BaseHealthcareException
 
-ALLOWED_EXTENSIONS = {".pdf", ".png", ".jpg", ".jpeg"}
+ALLOWED_EXTENSIONS = {".pdf", ".png", ".jpg", ".jpeg", ".webm", ".wav", ".mp3", ".ogg"}
 
 class UploadService:
     @staticmethod
@@ -15,7 +15,7 @@ class UploadService:
         """
         ext = get_file_extension(file.filename)
         if ext not in ALLOWED_EXTENSIONS:
-            raise BaseHealthcareException(f"Unsupported file format {ext}. Allowed formats: PDF, PNG, JPG, JPEG")
+            raise BaseHealthcareException(f"Unsupported file format {ext}. Allowed formats: PDF, PNG, JPG, JPEG, WEBM, WAV, MP3, OGG")
 
         # Ensure target folder exists
         folder_path = ensure_dir_exists(subfolder)

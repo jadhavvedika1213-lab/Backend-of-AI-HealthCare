@@ -5,6 +5,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
+    ROOT_DIR: str = str(Path(__file__).resolve().parent.parent)
     APP_NAME: str = "AI HealthCare Backend"
     APP_ENV: str = "development"
     DEBUG: bool = True

@@ -1,4 +1,5 @@
 from typing import Dict, Any
+from sqlalchemy import select
 from models.report import Report
 from models.prescription import Prescription
 from models.reminder import Reminder
