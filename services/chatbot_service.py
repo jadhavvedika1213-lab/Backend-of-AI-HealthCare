@@ -43,6 +43,7 @@ class ChatbotService:
 
         # Synthesize reply
         assistant_reply = ""
+        print("Settings Key:", settings.GEMINI_API_KEY)
         if "YOUR_GEMINI_API_KEY" in settings.GEMINI_API_KEY or not settings.GEMINI_API_KEY:
             assistant_reply = (
                 f"[MOCK CHAT REPLY] HealthBuddy: I received your question '{content}'. "
