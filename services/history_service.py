@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 from models.history import History
 from repositories.history_repo import HistoryRepository
 from schemas.history import HistoryCreate

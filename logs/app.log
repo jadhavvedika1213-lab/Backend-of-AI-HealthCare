@@ -178,3 +178,21 @@
 2026-07-26 14:27:24,690 - healthcare_backend - INFO - Incoming Request: POST /api/v1/auth/login
 2026-07-26 14:27:24,725 - healthcare_backend - WARNING - ValidationError on path /api/v1/auth/login: [{'type': 'json_invalid', 'loc': ('body', 40), 'msg': 'JSON decode error', 'input': {}, 'ctx': {'error': "Expecting ',' delimiter"}}]
 2026-07-26 14:27:24,735 - healthcare_backend - INFO - Completed Request: POST /api/v1/auth/login Status: 422 in 0.0452s
+2026-07-29 10:33:29,668 - healthcare_backend - INFO - Incoming Request: POST /api/v1/medical_image/analyze
+2026-07-29 10:33:29,749 - healthcare_backend - WARNING - Gemini API key is not configured. Returning Mock Image Analysis.
+2026-07-29 10:33:29,751 - healthcare_backend - INFO - Completed Request: POST /api/v1/medical_image/analyze Status: 200 in 0.0825s
+2026-07-29 10:33:29,764 - healthcare_backend - INFO - Incoming Request: POST /api/v1/medical_image/interactive
+2026-07-29 10:33:29,772 - healthcare_backend - WARNING - Gemini API key is not configured. Returning Mock Interactive Image Analysis.
+2026-07-29 10:33:29,774 - healthcare_backend - INFO - Completed Request: POST /api/v1/medical_image/interactive Status: 200 in 0.0103s
+2026-07-29 10:34:59,462 - healthcare_backend - INFO - Incoming Request: POST /api/v1/medical_image/analyze
+2026-07-29 10:34:59,505 - healthcare_backend - WARNING - Gemini API key is not configured. Returning Mock Image Analysis.
+2026-07-29 10:34:59,506 - healthcare_backend - INFO - Completed Request: POST /api/v1/medical_image/analyze Status: 200 in 0.0433s
+2026-07-29 10:34:59,513 - healthcare_backend - INFO - Incoming Request: POST /api/v1/medical_image/interactive
+2026-07-29 10:34:59,518 - healthcare_backend - WARNING - Gemini API key is not configured. Returning Mock Interactive Image Analysis.
+2026-07-29 10:34:59,519 - healthcare_backend - INFO - Completed Request: POST /api/v1/medical_image/interactive Status: 200 in 0.0062s
+2026-07-29 10:35:29,556 - healthcare_backend - INFO - Incoming Request: POST /api/v1/medical_image/analyze
+2026-07-29 10:35:29,597 - healthcare_backend - WARNING - Gemini API key is not configured. Returning Mock Image Analysis.
+2026-07-29 10:35:29,598 - healthcare_backend - INFO - Completed Request: POST /api/v1/medical_image/analyze Status: 200 in 0.0428s
+2026-07-29 10:35:29,606 - healthcare_backend - INFO - Incoming Request: POST /api/v1/medical_image/interactive
+2026-07-29 10:35:29,610 - healthcare_backend - WARNING - Gemini API key is not configured. Returning Mock Interactive Image Analysis.
+2026-07-29 10:35:29,611 - healthcare_backend - INFO - Completed Request: POST /api/v1/medical_image/interactive Status: 200 in 0.0054s
